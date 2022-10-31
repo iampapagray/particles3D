@@ -33,6 +33,7 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  overflow-x: hidden;
 }
 
 .content {
@@ -73,4 +74,24 @@ h1, p {
 p {
   font-size: 1.3rem;
   width: 40vw;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.8rem;
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  h1 {
+      font-size:2.4rem;
+  }
+    p {
+      font-size: 1rem;
+      width: 35vw;
+    }
 }
